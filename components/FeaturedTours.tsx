@@ -42,7 +42,7 @@ const tours = [
   },
   {
     title: "Humantay",
-    image: "https://images.unsplash.com/photo-1610411802100-84c483a90306?q=80&w=2070&auto=format&fit=crop",
+    image: "https://abexpeditions.com/es/wp-content/uploads/2021/09/laguna-humantay-senorita.jpg",
     duration: "1 Día",
     price: "75",
     rating: 4.9,
@@ -76,9 +76,9 @@ const FeaturedTours = () => {
           </button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 grid-rows-none md:grid-rows-2 gap-4 h-auto md:h-[1000px]">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 h-auto">
           {tours.map((tour, index) => {
-            let gridClasses = "relative group overflow-hidden bg-[#161616] border border-white/5 min-h-[350px] md:min-h-0";
+            let gridClasses = "relative group overflow-hidden bg-[#161616] border border-white/5 min-h-[400px]";
             if (tour.size === "large") gridClasses += " md:col-span-2 md:row-span-2";
             if (tour.size === "wide") gridClasses += " md:col-span-2 md:row-span-1";
             if (tour.size === "small") gridClasses += " md:col-span-1 md:row-span-1";
