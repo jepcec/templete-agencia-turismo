@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { ChevronRight } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -9,7 +10,7 @@ const Hero = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-[20000ms] hover:scale-110"
         style={{ 
-          backgroundImage: "url('https://images.unsplash.com/photo-1587590227264-0ac64ce63ce8?q=80&w=2070&auto=format&fit=crop')",
+          backgroundImage: "url('https://content.r9cdn.net/rimg/simg/2048/45618.jpg?width=1366&height=768&xhint=1020&yhint=831&crop=true')",
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-black/60" />
@@ -32,7 +33,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-6xl md:text-8xl lg:text-[120px] font-black mb-8 leading-[0.85] tracking-tighter uppercase italic"
+            className="text-5xl md:text-8xl lg:text-[120px] font-black mb-8 leading-[0.9] md:leading-[0.85] tracking-tighter uppercase italic"
           >
             Cusco <br />
             <span className="text-primary">Eterno</span>
@@ -42,7 +43,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-lg md:text-2xl text-white/80 max-w-2xl mb-12 font-medium tracking-tight leading-tight uppercase"
+            className="text-base md:text-2xl text-white/80 max-w-2xl mb-12 font-medium tracking-tight leading-snug md:leading-tight uppercase"
           >
             Tours de alto impacto en el corazón de los Andes. Vive la experiencia definitiva en Machu Picchu con expertos locales.
           </motion.p>
@@ -51,14 +52,23 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="flex flex-wrap gap-4"
+            className="flex flex-col sm:flex-row gap-4 md:gap-6"
           >
-            <button className="btn-rockstar text-lg px-12 py-5 shadow-[8px_8px_0px_0px_rgba(255,255,255,0.2)] hover:shadow-none">
-              Ver Catálogo
-            </button>
-            <button className="btn-rockstar-outline text-lg px-12 py-5">
+            <motion.button 
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="btn-rockstar group w-full sm:w-auto sm:min-w-[240px]"
+            >
+              <span>Ver Catálogo</span>
+              <ChevronRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+            </motion.button>
+            <motion.button 
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="btn-rockstar-outline w-full sm:w-auto sm:min-w-[240px]"
+            >
               Nuestra Historia
-            </button>
+            </motion.button>
           </motion.div>
         </div>
       </div>

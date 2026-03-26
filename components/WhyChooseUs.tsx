@@ -32,7 +32,7 @@ const WhyChooseUs = () => {
           >
             <div className="relative aspect-[4/5] overflow-hidden border-4 border-white/10 group-hover:border-primary transition-colors duration-500">
               <img
-                src="https://images.unsplash.com/photo-1544991583-0937a069d06b?q=80&w=2070&auto=format&fit=crop"
+                src="https://www.peru.travel/Contenido/Uploads/turista-caminando-en-sacsayhuaman-cusco-desktop_639084270140630988.jpg"
                 alt="Viajero en Cusco"
                 className="object-cover w-full h-full grayscale group-hover:grayscale-0 transition-all duration-700"
               />
@@ -55,8 +55,8 @@ const WhyChooseUs = () => {
             transition={{ duration: 0.8 }}
             className="flex-1"
           >
-            <h2 className="text-primary text-xl font-black mb-4 tracking-tight italic">Excelencia Táctica</h2>
-            <h3 className="text-5xl md:text-7xl font-black text-white italic tracking-tighter uppercase leading-none mb-12">
+            <h2 className="text-primary text-lg md:text-xl font-black mb-4 tracking-tight italic">Excelencia Táctica</h2>
+            <h3 className="text-4xl md:text-7xl font-black text-white italic tracking-tighter uppercase leading-none mb-12">
               ¿Por qué <br /> Elegirnos?
             </h3>
             

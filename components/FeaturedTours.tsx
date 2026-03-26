@@ -1,6 +1,6 @@
 "use client";
 
-import { Clock, Star, ArrowRight } from "lucide-react";
+import { Clock, Star } from "lucide-react";
 import { motion } from "framer-motion";
 
 const tours = [
@@ -15,7 +15,7 @@ const tours = [
   },
   {
     title: "Valle Sagrado",
-    image: "https://images.unsplash.com/photo-1590050752117-23a9d7f281bd?q=80&w=2070&auto=format&fit=crop",
+    image: "https://image-tc.galaxy.tf/wijpeg-7s1v8e5km8dojs4ckc2dhyi4t/valle-sagrado-destino-unico_wide.jpg?crop=26%2C0%2C1548%2C871",
     duration: "1 Día",
     price: "85",
     rating: 4.8,
@@ -33,7 +33,7 @@ const tours = [
   },
   {
     title: "Camino Inca",
-    image: "https://images.unsplash.com/photo-1555930647-66c813d10bb2?q=80&w=2070&auto=format&fit=crop",
+    image: "https://www.peruserviciosturisticos.com/wp-content/uploads/2021/12/camino-inca-820x547.jpg",
     duration: "4 Días",
     price: "650",
     rating: 5.0,
@@ -62,23 +62,23 @@ const tours = [
 
 const FeaturedTours = () => {
   return (
-    <section id="tours" className="py-24 bg-black border-t border-white/5">
+    <section id="tours" className="py-16 md:py-24 bg-black border-t border-white/5">
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 md:mb-16 gap-8">
           <div className="max-w-2xl">
-            <h2 className="text-primary text-xl font-black mb-4 tracking-tight italic">Tours Destacados</h2>
-            <h3 className="text-5xl md:text-7xl font-black text-white italic tracking-tighter uppercase leading-none">
+            <h2 className="text-primary text-lg md:text-xl font-black mb-4 tracking-tight italic">Tours Destacados</h2>
+            <h3 className="text-4xl md:text-7xl font-black text-white italic tracking-tighter uppercase leading-none">
               Nuestros <br /> Mundos
             </h3>
           </div>
-          <button className="btn-rockstar-outline px-12 py-4">
+          <button className="btn-rockstar-outline w-full md:w-auto px-12 py-4">
             Ver Todo
           </button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-auto md:h-[1000px]">
+        <div className="grid grid-cols-1 md:grid-cols-4 grid-rows-none md:grid-rows-2 gap-4 h-auto md:h-[1000px]">
           {tours.map((tour, index) => {
-            let gridClasses = "relative group overflow-hidden bg-[#161616] border border-white/5";
+            let gridClasses = "relative group overflow-hidden bg-[#161616] border border-white/5 min-h-[350px] md:min-h-0";
             if (tour.size === "large") gridClasses += " md:col-span-2 md:row-span-2";
             if (tour.size === "wide") gridClasses += " md:col-span-2 md:row-span-1";
             if (tour.size === "small") gridClasses += " md:col-span-1 md:row-span-1";
