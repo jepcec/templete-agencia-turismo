@@ -8,13 +8,13 @@ const articles = [
     title: "Protocolos: Altitud en Cusco",
     category: "Táctico",
     date: "15 Mar, 2024",
-    image: "https://images.unsplash.com/photo-1518182170546-076d3fd16942?q=80&w=1974&auto=format&fit=crop"
+    image: "https://viajeroperuano.com/wp-content/uploads/2025/11/oximetro-de-pulso-para-prevenir-mal-de-altura.jpg"
   },
   {
     title: "Infiltración: Machu Picchu 2024",
     category: "Misión",
     date: "10 Mar, 2024",
-    image: "https://images.unsplash.com/photo-1541417101235-5be13247079a?q=80&w=2070&auto=format&fit=crop"
+    image: "https://www.turiweb.pe/wp-content/uploads/2023/10/mapi-161023.jpg"
   },
   {
     title: "Gastronomía: El Sabor del Imperio",
